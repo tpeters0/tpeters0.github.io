@@ -81,16 +81,22 @@ p {
 }
 
 .intro{
-  height: 400px;
+  height: 425px;
 }
 
+.middle{
+  height: 460px;
+}
+
+.workmiddle{
+  height: 500px;
+}
 
 .footer {
   background-color: #1A1D23;
   opacity: 25%;
   padding: 10px;
   color: #ddd;
-  font-size: 20px;
 }
 
 .iframe-container {
@@ -110,4 +116,18 @@ height: 100%;
 
 .modal.in .modal-dialog {
 transform: none; /*translate(0px, 0px);*/
+}
+
+
+@media (min-width: 768px) {
+  .footer{
+      font-size: 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+  .footer{
+      font-size: 12px;
+    }
 }
