@@ -4,18 +4,38 @@ font-family: 'Playfair Display SC', serif;
 color: white;
 }
 
-h2
-{
+h2 {
   font-size: 1.5em;
   color: white;
   margin-top: 10px;
   text-align: center;
+  font-family: "Georgia", serif;
   /*background-color: darkred;*/
   padding: 10px;
 }
 
-body {
-    background: url(../img/mouth-of-the-monster.jpg) no-repeat center center fixed;
+p {
+  color: white;
+}
+
+.index {
+    background: url(../img/mouth-of-the-monsterb.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100%;
+}
+.about {
+    background: url(../img/LT_fireplace.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100%;
+}
+.contact {
+    background: url(../img/pencil_guy_2.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -35,25 +55,35 @@ body {
   width: 100px;
   background-color: lightblue;
   padding:5px;
-  opacity: .9;
   border-radius: 5px;
 
 }
 
 .logos-sm{
   width: 50px;
-  background-color: lightblue;
+  height: 50px;
+  background-color: white;
   padding:5px;
-  opacity: .5;
   border-radius: 5px;
-
+  font-size: 3em;
 }
-
 
 .custnav{
   height: 80px;
   border-radius: 100px;
 }
+
+.demo {
+  padding: 2px;
+  text-align: center;
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+.intro{
+  height: 400px;
+}
+
 
 .footer {
   background-color: #1A1D23;
@@ -61,4 +91,23 @@ body {
   padding: 10px;
   color: #ddd;
   font-size: 20px;
+}
+
+.iframe-container {
+padding-bottom: 60%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.modal.in .modal-dialog {
+transform: none; /*translate(0px, 0px);*/
 }
