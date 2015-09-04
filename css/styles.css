@@ -26,8 +26,8 @@ p {
     -o-background-size: cover;
     min-height: 100%;
 }
-.about {
-    background: url(../img/LT_fireplace.jpg) no-repeat center center fixed;
+.work {
+    background: url(../img/mud_machine_render_edit2.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
