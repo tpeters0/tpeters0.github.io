@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 h1
 {
 font-family: 'Playfair Display SC', serif;
@@ -18,6 +23,13 @@ p {
   color: white;
 }
 
+body {
+     height:100%;
+     margin:0;
+     margin-bottom: 50px;
+     padding:0;
+}
+
 .index {
     background: url(../img/mouth-of-the-monsterb.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -27,15 +39,7 @@ p {
     min-height: 100%;
 }
 .work {
-    background: url(../img/mud_machine_render_edit2.jpg) no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    min-height: 100%;
-}
-.contact {
-    background: url(../img/pencil_guy_up.jpg) no-repeat center center fixed;
+    background: url(../img/mud_machine_render_edit3.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -85,11 +89,21 @@ p {
 }
 
 .middle{
-  height: 460px;
+  height: 450px;
 }
 
 .workmiddle{
-  height: 500px;
+  height: 550px;
+}
+
+.dropdown{
+  background-color: papayawhip;
+  width: 250px;
+  border-radius: 6px;
+  padding: 2px;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 auto 0 50px;
 }
 
 .footer {
@@ -98,6 +112,25 @@ p {
   padding: 10px;
   color: #ddd;
 }
+
+#overlay {
+     width:250px;
+     margin: auto;
+     background-color: #fff;
+     border-radius: 15px;
+     padding:15px;
+     text-align:center;
+}
+.close{
+  padding-right: 10px;
+  padding-left: 20px;
+  font-style: bold;
+}
+
+.email{
+    color:#0077B5;
+}
+
 
 .iframe-container {
 padding-bottom: 60%;
@@ -119,15 +152,40 @@ transform: none; /*translate(0px, 0px);*/
 }
 
 
-@media (min-width: 768px) {
+
+/*large*/
+@media (min-width: 641px) {
   .footer{
       font-size: 20px;
     }
 
+  .contact {
+    background: url(../img/pencil_guy_up.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100%;
+   }
 }
 
-@media (max-width: 767px) {
+/*small*/
+@media (max-width: 640px) {
   .footer{
       font-size: 12px;
     }
+
+    .page_title{
+      background-color: black;
+      margin-top: 2px;
+    }
+
+    .contact {
+      background: url(../img/pencil_guy_3.jpg) no-repeat center center fixed;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      /*min-height: 100%;*/
+     }
 }

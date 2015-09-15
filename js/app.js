@@ -25,7 +25,7 @@ $(function(){
         //var iframe = '<object data="'+pdf_link+'" type="application/pdf"><embed src="'+pdf_link+'" type="application/pdf" /></object>'
         var iframe = '<object type="application/pdf" data="'+pdf_link+'" width="100%" height="500">No Support</object>'
         $.createModal({
-            title:'My Title',
+            title:'Tamara C. Peters',
             message: iframe,
             closeButton:true,
             scrollable:false
@@ -43,3 +43,8 @@ $(document).scroll(function() {
         $('#sticky-nav').removeClass('navbar-fixed-top');
     }
 });
+
+function overlay() {
+	el = document.getElementById("overlay");
+	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+}
